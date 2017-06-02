@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+Layout de tela de detalhes da conta de energia por dia.
+@author Breno Marques
+@version 1.00
+@since Release 01.01.00
+-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.brolam.oha.supervisory.ui.OhaEnergyUseBillDetailsActivity">
+
+</android.support.constraint.ConstraintLayout>

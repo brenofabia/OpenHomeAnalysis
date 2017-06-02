@@ -39,7 +39,7 @@ import br.com.brolam.oha.supervisory.ui.fragments.OhaEnergyUseLogFilterFragment;
  * @version 1.00
  * @since Release 01
  */
-public class OhaEnergyUseDetailsActivity extends AppCompatActivity implements OhaEnergyUseLogHelper.IOhaEnergyUseLogHelper, View.OnClickListener, OhaEnergyUseLogFilterFragment.IOhaFilterWattsFragment, OhaEnergyUseWhHolder.IOhaEnergyUseWhHolder, SwipeRefreshLayout.OnRefreshListener {
+public class OhaEnergyUseDayDetailsActivity extends AppCompatActivity implements OhaEnergyUseLogHelper.IOhaEnergyUseLogHelper, View.OnClickListener, OhaEnergyUseLogFilterFragment.IOhaFilterWattsFragment, OhaEnergyUseWhHolder.IOhaEnergyUseWhHolder, SwipeRefreshLayout.OnRefreshListener {
 
     //Parâmetro obrigatório para informar a data e hora inicial.
     private static final String PARAM_BEGIN_DATE_TIME = "param_begin_date_time";
@@ -87,7 +87,7 @@ public class OhaEnergyUseDetailsActivity extends AppCompatActivity implements Oh
      * @param wattsLessEqual    informar o watts final.
      */
     public static void show(Context context, long beginDateTime, long endDateTime, double kwhCost, boolean isShowLog, FilterWatts filterWatts, double wattsGreaterEqual, double wattsLessEqual) {
-        Intent intent = new Intent(context, OhaEnergyUseDetailsActivity.class);
+        Intent intent = new Intent(context, OhaEnergyUseDayDetailsActivity.class);
         intent.putExtra(PARAM_BEGIN_DATE_TIME, beginDateTime);
         intent.putExtra(PARAM_End_DATE_TIME, endDateTime);
         intent.putExtra(PARAM_KWH_COST, kwhCost);
@@ -101,7 +101,7 @@ public class OhaEnergyUseDetailsActivity extends AppCompatActivity implements Oh
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_energy_use_details);
+        setContentView(R.layout.activity_energy_use_day_details);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         Bundle bundle = getIntent().getExtras();
         this.beginDateTime = bundle.getLong(PARAM_BEGIN_DATE_TIME, 0);
@@ -143,7 +143,7 @@ public class OhaEnergyUseDetailsActivity extends AppCompatActivity implements Oh
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.activity_energy_use_details, menu);
+        getMenuInflater().inflate(R.menu.activity_energy_use_day_details, menu);
         return true;
     }
 

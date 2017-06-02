@@ -10,7 +10,7 @@ Layout de tela de detalhes da utilização de energia por watts ou watts hora.
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="br.com.brolam.oha.supervisory.ui.OhaEnergyUseDetailsActivity">
+    tools:context="br.com.brolam.oha.supervisory.ui.OhaEnergyUseDayDetailsActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"
@@ -37,7 +37,7 @@ Layout de tela de detalhes da utilização de energia por watts ou watts hora.
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_energy_use_details" />
+    <include layout="@layout/content_energy_use_day_details" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

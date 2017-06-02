@@ -299,7 +299,7 @@ public class OhaMainActivity extends AppCompatActivity
     public void onEnergyUseBillSelect(int id, long fromDate, long toDate, double kwhCost, int menuItemId) {
         switch (menuItemId){
             case R.id.action_details:
-                showSnackBar("Bill details not implemented yet!");
+                OhaEnergyUseBillDetailsActivity.show(this);
                 return;
             case R.id.action_edit:
                 OhaEnergyUseBillFragment.update(this, id, fromDate, toDate, kwhCost);
@@ -319,7 +319,7 @@ public class OhaMainActivity extends AppCompatActivity
         switch (menuItemId){
             case R.id.action_details:
                 long endDateTime = OhaHelper.getDateEnd(new Date(beginDate), false).getTime();
-                OhaEnergyUseDetailsActivity.show(this, beginDate, endDateTime, kwhCost, false, EnergyUseLogEntry.FilterWatts.NONE, 0, 0);
+                OhaEnergyUseDayDetailsActivity.show(this, beginDate, endDateTime, kwhCost, false, EnergyUseLogEntry.FilterWatts.NONE, 0, 0);
                 return;
             case R.id.action_chart:
                 showSnackBar("Day energy use chart not implemented yet!");

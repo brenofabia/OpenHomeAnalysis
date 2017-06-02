@@ -11,7 +11,6 @@ import java.util.Date;
 import br.com.brolam.library.helpers.OhaHelper;
 import br.com.brolam.oha.supervisory.R;
 import br.com.brolam.oha.supervisory.data.helpers.OhaEnergyUseLogHelper;
-import br.com.brolam.oha.supervisory.ui.OhaEnergyUseDetailsActivity;
 
 /**
  * Suporte para exibir um linha com a utilização de energia em watts por hora.
