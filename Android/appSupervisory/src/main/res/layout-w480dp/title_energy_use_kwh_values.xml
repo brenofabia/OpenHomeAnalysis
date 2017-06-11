@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+Exibir uma linha com os valores totais da utilização de energia por KWH em telas maiores que 480dp.
+@author Breno Marques
+@version 1.00
+@since Release 01
+-->
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp">
+
+    <TextView
+        android:id="@+id/textViewDuration"
+        style="@style/AppTheme.Col.Title.EnergyUseBill.DurationValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        tools:text="0.59" />
+
+    <TextView
+        android:id="@+id/textViewWh1"
+        style="@style/AppTheme.Col.Title.EnergyUseBill.KwhPhase"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        tools:text="999.99" />
+
+    <TextView
+        android:id="@+id/textViewWh2"
+        style="@style/AppTheme.Col.Title.EnergyUseBill.KwhPhase"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        tools:text="999.99" />
+
+    <TextView
+        android:id="@+id/textViewWh3"
+        style="@style/AppTheme.Col.Title.EnergyUseBill.KwhPhase"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        tools:text="999.99" />
+
+    <TextView
+        android:id="@+id/textViewKwh"
+        style="@style/AppTheme.Col.Title.EnergyUseBill.Kwh"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="9.99" />
+
+    <TextView
+        android:id="@+id/textViewCost"
+        style="@style/AppTheme.Col.Title.EnergyUseBill.Cost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="9.99" />
+
+</TableRow>

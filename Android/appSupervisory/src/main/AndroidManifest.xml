@@ -37,7 +37,10 @@
         <activity
             android:name=".ui.OhaSettingsActivity"
             android:label="@string/title_activity_settings" />
-        <activity android:name=".ui.OhaEnergyUseBillDetailsActivity"/>
+        <activity android:name=".ui.OhaEnergyUseBillDetailsActivity"
+            android:configChanges="keyboardHidden"
+            android:label="@string/title_activity_details"
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <!-- Content Providers -->
         <provider

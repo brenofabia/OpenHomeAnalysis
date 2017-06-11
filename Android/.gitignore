@@ -41,6 +41,8 @@ captures/
 .idea/tasks.xml
 .idea/gradle.xml
 .idea/libraries
+.idea/inspectionProfiles/
+
 
 # Keystore files
 *.jks

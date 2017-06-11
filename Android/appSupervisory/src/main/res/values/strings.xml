@@ -189,5 +189,11 @@
     <string name="fragment_energy_use_bill_end_date">End date</string>
     <string name="fragment_energy_use_bill_kwh_cost">Kwh cost</string>
 
+    <!-- Energy Use Bill Columns -->
+    <string name="day">Day</string>
+    <string name="kwh_phase1">Kwh(1)</string>
+    <string name="kwh_phase2">Kwh(2)</string>
+    <string name="kwh_phase3">Kwh(3)</string>
+
 
 </resources>

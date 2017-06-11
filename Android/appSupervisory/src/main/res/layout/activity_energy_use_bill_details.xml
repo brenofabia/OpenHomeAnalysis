@@ -1,14 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?><!--
 Layout de tela de detalhes da conta de energia por dia.
 @author Breno Marques
-@version 1.00
+@version 1.01.00
 @since Release 01.01.00
 -->
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context="br.com.brolam.oha.supervisory.ui.OhaEnergyUseBillDetailsActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/default_text_margin"
+            android:theme="@style/AppTheme.AppBarOverlay">
+            <include android:id="@+id/titleEnergyUseKwh" layout="@layout/title_energy_use_kwh" />
+            <include android:id="@+id/titleEnergyUseKwhValues" layout="@layout/title_energy_use_kwh_values" />
+        </TableLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>
