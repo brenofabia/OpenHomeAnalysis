@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+Exibir uma linha com os valores da utilização de energia por kwh em telas maiores que 480dp.
+@author Breno Marques
+@version 1.01.00
+@since Release 01
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp">
+
+    <RadioButton
+        style="@style/AppTheme.Col.EnergyUse.RadioButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textViewDay"
+        style="@style/AppTheme.Col.EnergyUseBill.Day"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="99/9" />
+
+    <TextView
+        android:id="@+id/textViewDuration"
+        style="@style/AppTheme.Col.EnergyUseBill.Duration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="0.59" />
+
+    <TextView
+        android:id="@+id/textViewKwh1"
+        style="@style/AppTheme.Col.EnergyUseBill.KwhPhase"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="999.99" />
+
+    <TextView
+        android:id="@+id/textViewKwh2"
+        style="@style/AppTheme.Col.EnergyUseBill.KwhPhase"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="999.99" />
+
+    <TextView
+        android:id="@+id/textViewKwh3"
+        style="@style/AppTheme.Col.EnergyUseBill.KwhPhase"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="999.99" />
+
+    <TextView
+        android:id="@+id/textViewKTotal"
+        style="@style/AppTheme.Col.EnergyUseBill.Kwh"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="9.99" />
+
+    <TextView
+        style="@style/AppTheme.Col.EnergyUseBill.Cost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="9.99" />
+
+</LinearLayout>
